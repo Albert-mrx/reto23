@@ -1,0 +1,33 @@
+<section class="form-container">
+  <h2 class="text-center">Registro de Usuarios</h2>
+  <section class="container">
+      <form (ngSubmit)="onSubmit()">
+        <!-- name -->
+        <mat-form-field class="example-full-width">
+          <mat-label>Name</mat-label>
+          <input matInput class="" id="name" [(ngModel)]="datos.name" name="name">
+        </mat-form-field>
+
+        <!-- username -->
+          <mat-form-field class="example-full-width">
+            <mat-label>Username</mat-label>
+            <input matInput placeholder="username" value="username" [(ngModel)]="datos.username" name="username">
+          </mat-form-field>
+
+          <section class="form-group m-2">
+            <button mat-raised-button color="accent" type="submit">Submit</button>
+          </section>
+      </form>
+  </section>
+</section>
+
+
+
+
+
+
+
+<!-- Asincrona -->
+
+
+

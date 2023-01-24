@@ -1,0 +1,14 @@
+<article>
+  <section class="menssage-container">
+    <h3>Enviamos tus sugerencias</h3>
+    <section class="col-3 container-contacto">
+      <mat-form-field class="example-full-width">
+        <mat-label>Mensaje</mat-label>
+        <textarea matInput placeholder="Ex. It makes me feel..."[(ngModel)]="mensaje"></textarea>
+      </mat-form-field>
+    </section>
+    <button mat-raised-button color="accent" (click)="EnviarMensaje()">Enviar</button>
+  </section>
+</article>
+
+

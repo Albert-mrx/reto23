@@ -1,0 +1,34 @@
+<h2>Busqueda de usuarios</h2>
+<section class="container-sm">
+    <section class="form-group">
+      <!-- input share -->
+      <mat-form-field class="example-full-width box">
+        <mat-label>Ingrese ID:</mat-label>
+        <input matInput placeholder="Ex. Pizza" value="share" #txtIdUser>
+      </mat-form-field>
+      <button mat-raised-button color="accent" type="button" (click)="getUserID(txtIdUser.value)">Buscar</button>
+    </section>
+    <ng-container *ngIf="!vista">
+        <section *ngIf="!resultado" >
+            Usuario no encontrado!!
+        </section>
+        <ng-container *ngIf="resultado">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Usuario</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngIf="user">
+                        <td>{{ user.id }}</td>
+                        <td>{{ user.name }}</td>
+                        <td>{{ user.username }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </ng-container>
+    </ng-container>
+</section>

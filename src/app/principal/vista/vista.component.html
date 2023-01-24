@@ -1,0 +1,29 @@
+<h2 class="text-center">Lista de Usuarios</h2>
+<section class="container-sm">
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Usuario</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of listado">
+                <td>{{ item.id }}</td>
+                <td>{{ item.name }}</td>
+                <td>{{ item.username }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="example-container">
+        <mat-form-field hintLabel="Max 10 characters" appearance="fill">
+          <mat-label>Enter some input</mat-label>
+          <input matInput #input maxlength="10" placeholder="Ex. Nougat">
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+          <mat-label>Select me</mat-label>
+        </mat-form-field>
+      </div>
+</section>

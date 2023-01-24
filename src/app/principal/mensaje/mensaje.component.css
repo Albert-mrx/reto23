@@ -1,0 +1,28 @@
+.menssage-container{
+  display: flex;
+  flex-direction:column;
+  width: 400px;
+  height: 350px;
+  background: #353535;
+  gap:10px;
+  padding: 3%;
+  border-radius: 5px;
+}
+h3{
+  color:#61dfa0;
+  font-size: 19px;
+  font-weight: 400;
+}
+textarea{
+  width: 200px;
+}
+button{
+  margin:55px 0px 0px 0px;
+  color:white;
+}
+article{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 140px;
+}
